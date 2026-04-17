@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo-madahesa.png">
+    <title>Madahesa - Portal Sertifikat</title>
+
+    <!-- Meta SEO & Theme -->
+    <meta name="description"
+        content="Portal Madahesa untuk pengisian Sertifikat Pramuka secara cepat, modern, dan efisien.">
+    <meta name="theme-color" content="#946146">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS CSS (Animasi Skrol) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+
+    <!-- Tailwind Config & Engine -->
+    <script src="assets/js/tailwind-config.js?v=2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<<body
+    class="text-black antialiased flex flex-col items-center justify-between font-sans selection:bg-[#ffde59] selection:text-black relative overflow-x-hidden">
+
+    <!-- Navbar / Header -->
+    <nav class="w-full fixed top-0 left-0 z-50 bg-white border-b-4 border-black py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-4 cursor-pointer group" data-aos="fade-down" data-aos-duration="800">
+                <div
+                    class="w-12 h-12 bg-[#ffde59] border-2 border-black flex items-center justify-center shadow-[4px_4px_0px_#000] rotate-3 group-hover:-rotate-3 transition-transform shrink-0">
+                    <img src="assets/images/logo-madahesa.png" alt="Logo" class="w-8 h-8 object-contain">
+                </div>
+                <div class="text-left hidden sm:block">
+                    <h2 class="text-2xl font-black uppercase tracking-tighter text-black leading-none mb-1">Madahesa
+                        Jakra</h2>
+                    <p class="text-[10px] font-bold text-gray-800 uppercase tracking-widest leading-none">Sistem
+                        Sertifikasi Terpadu</p>
+                </div>
+                <!-- Title mini untuk mobile -->
+                <div class="text-left sm:hidden">
+                    <h2 class="text-2xl font-black uppercase tracking-tighter text-black leading-none mb-1">Madahesa
+                        Jakra</h2>
+                    <p class="text-[10px] font-bold text-gray-800 uppercase tracking-widest leading-none">Sistem
+                        Sertifikasi Terpadu</p>
+                </div>
+            </div>
+            <!-- Dummy Nav Links -->
+            <div class="hidden md:flex items-center space-x-6 text-sm font-black tracking-widest uppercase">
+                <a href="#"
+                    class="hover:underline decoration-4 underline-offset-4 decoration-[#ffde59]">BERANDA</a>
+                <a href="#" class="hover:underline decoration-4 underline-offset-4 decoration-[#ffde59]">FITUR</a>
+                <a href="#"
+                    class="bg-[#ffde59] px-4 py-2 border-2 border-black shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">HUBUNGI
+                    !</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="w-full max-w-6xl mx-auto px-6 pt-36 pb-16 relative z-10 flex-grow flex flex-col justify-center">
+
+        <!-- Header Section -->
+        <header class="text-center mb-20 relative" data-aos="fade-down" data-aos-duration="1000">
+            <!-- Badge -->
+            <div
+                class="inline-flex items-center justify-center px-5 py-2 mb-8 border-2 border-black bg-[#ffde59] text-sm font-black text-black shadow-[4px_4px_0px_0px_#000] cursor-default hover:translate-y-1 hover:translate-x-1 hover:shadow-[0px_0px_0px_0px_#000] transition-all tracking-widest uppercase rounded-sm">
+                Sistem Sertifikasi Terpadu
+            </div>
+
+            <!-- Title -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 group">
+                <h1
+                    class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-black tracking-tighter uppercase drop-shadow-[5px_5px_0px_#fff] text-center leading-tight">
+                    Madahesa Jakra
+                </h1>
+            </div>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-xl md:text-2xl text-black max-w-3xl mx-auto font-bold leading-relaxed mb-10 bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_#000] rounded-sm uppercase tracking-wide"
+                data-aos="fade-up" data-aos-delay="200">
+                Portal Resmi untuk pengisian Sertifikat Tanda Kecakapan Umum dan Khusus
+            </p>
+
+            <!-- Feature Chips -->
+            <div class="flex flex-wrap items-center justify-center gap-6" data-aos="fade-up" data-aos-delay="300">
+                <span
+                    class="px-5 py-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_#000] text-black text-sm font-black flex items-center hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all cursor-default uppercase tracking-widest rounded-sm">
+                    <svg class="w-5 h-5 mr-3 text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg> Akses Kilat
+                </span>
+                <span
+                    class="px-5 py-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_#000] text-black text-sm font-black flex items-center hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all cursor-default uppercase tracking-widest rounded-sm">
+                    <svg class="w-5 h-5 mr-3 text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                        </path>
+                    </svg> Data Aman
+                </span>
+            </div>
+        </header>
+
+        <!-- Dynamic Neo-Brutalism Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-12 gap-8 max-w-5xl mx-auto">
+
+            <!-- Card 1: Ramu -->
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="window.open('https://forms.gle/s2Xd2QAvtvrtnXym6')" data-aos="zoom-in-up" data-aos-delay="100">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/ramu.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <!-- Grid Pattern Overlay -->
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjRkZGIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAiLz4KPC9zdmc+')]">
+                    </div>
+
+                    <!-- Badge Neo -->
+                    <div
+                        class="absolute top-4 left-4 bg-[#ff4d4d] border-2 border-black px-4 py-1.5 font-black text-sm text-white shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        TKU
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        SERTIFIKAT PENGGALANG RAMU</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi sertifikat penggalang ramu</p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Rakit -->
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="bukaFormulir('rakit')" data-aos="zoom-in-up" data-aos-delay="200">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/rakit.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <!-- Grid Pattern Overlay -->
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjRkZGIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAiLz4KPC9zdmc+')]">
+                    </div>
+
+                    <!-- Badge Neo -->
+                    <div
+                        class="absolute top-4 left-4 bg-[#ff4d4d] border-2 border-black px-4 py-1.5 font-black text-sm text-white shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        TKU
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        Sertifikat Penggalang Rakit</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi sertifikat penggalang rakit</p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Terap -->
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="bukaFormulir('terap')" data-aos="zoom-in-up" data-aos-delay="300">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/terap.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <!-- Grid Pattern Overlay -->
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjRkZGIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAiLz4KPC9zdmc+')]">
+                    </div>
+
+                    <!-- Badge Neo -->
+                    <div
+                        class="absolute top-4 left-4 bg-[#ff4d4d] border-2 border-black px-4 py-1.5 font-black text-sm text-white shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        TKU
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        Sertifikat Penggalang Terap</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi sertifikat penggalang terap
+                    </p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: TKK -->
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="bukaFormulir('tkk')" data-aos="zoom-in-up" data-aos-delay="400">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/tkk.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div
+                        class="absolute top-4 left-4 bg-[#c822ff] border-2 border-black px-4 py-1.5 font-black text-sm text-black shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        TKK
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        Sertifikat TKK</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi Sertifikat TKK.</p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Brutalist Footer -->
+    <footer class="w-full bg-white border-t-4 border-black mt-16 relative z-10" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center space-x-4">
+                <div
+                    class="w-12 h-12 bg-[#ffde59] border-2 border-black flex items-center justify-center shadow-[4px_4px_0px_#000] rotate-3 hover:-rotate-3 transition-transform">
+                    <img src="assets/images/logo-madahesa.png" alt="Logo" class="w-8 h-8 object-contain">
+                </div>
+                <div class="text-left">
+                    <h2 class="text-2xl font-black uppercase tracking-tighter text-black">Madahesa Jakra</h2>
+                    <p class="text-xs font-bold text-gray-800 uppercase tracking-widest">Sistem Sertifikasi Terpadu</p>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <p
+                    class="text-sm font-black uppercase bg-black text-white px-4 py-2 border-2 border-black inline-block shadow-[4px_4px_0px_#ffde59] tracking-widest text-center">
+                    Copyright &copy; <span id="year"></span> by Sahril Sidik
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Modal Script -->
+    <script>
+        function openModal() {
+            const modal = document.getElementById('announcementModal');
+            const content = document.getElementById('modalContent');
+            if (modal && content) {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('announcementModal');
+            const content = document.getElementById('modalContent');
+            if (modal && content) {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                content.classList.remove('scale-100');
+                content.classList.add('scale-95');
+            }
+        }
+
+        // Show modal on load after a slight delay
+        window.addEventListener('load', () => {
+            setTimeout(openModal, 600);
+        });
+    </script>
+    </body>
+
+</html>

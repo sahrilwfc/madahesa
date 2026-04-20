@@ -87,7 +87,7 @@
             <!-- Subtitle -->
             <p class="text-base sm:text-xl md:text-2xl text-black max-w-3xl mx-auto font-bold leading-relaxed mb-10 bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_#000] rounded-sm uppercase tracking-wide"
                 data-aos="fade-up" data-aos-delay="200">
-                Portal Resmi untuk pengisian Sertifikat Tanda Kecakapan Umum dan Khusus
+                Portal Resmi untuk pengisian Sertifikat Tanda Kecakapan Umum, Khusus dan Pramuka Garuda.
             </p>
 
             <!-- Feature Chips -->
@@ -218,7 +218,7 @@
                 </div>
             </div>
 
-            <!-- Card 4: TKK -->
+            <!-- Card 4: garuda -->
             <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
                 onclick="window.open('https://forms.gle/DhHQMf2w9mBzY3aKA')" data-aos="zoom-in-up" data-aos-delay="100">
                 <!-- Header Card (Black Image Section) -->
@@ -246,9 +246,48 @@
                     </div>
                 </div>
             </div>
-
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="openModal()" data-aos="zoom-in-up" data-aos-delay="100">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/garuda.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div
+                        class="absolute top-4 left-4 bg-[#ffde59] border-2 border-black px-4 py-1.5 font-black text-sm text-black shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        Garuda
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        Portofolio Garuda</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi Portofolio Garuda.</p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- Modal for Portofolio Garuda -->
+    <div id="announcementModal" class="fixed inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none z-50">
+        <div id="modalContent" class="bg-white w-11/12 max-w-xl p-6 rounded-md transform transition-transform duration-200 scale-95 shadow-lg border-2 border-black">
+            <div class="flex items-start justify-between">
+                <h3 class="text-xl font-black uppercase">Portofolio Garuda</h3>
+            </div>
+            <p class="mt-4 text-gray-800 font-bold">Portofolio Garuda masih dalam proses. Silakan cek kembali nanti.</p>
+            <div class="mt-6 flex justify-end">
+                <button onclick="closeModal()" class="px-4 py-2 bg-[#ffde59] text-black font-black border-2 border-black uppercase">Tutup</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <!-- Brutalist Footer -->
@@ -302,10 +341,8 @@
             }
         }
 
-        // Show modal on load after a slight delay
-        window.addEventListener('load', () => {
-            setTimeout(openModal, 600);
-        });
+        // Modal open is triggered via user interaction (e.g., klik Portofolio Garuda)
+        // Removed automatic open on page load.
     </script>
     </body>
 

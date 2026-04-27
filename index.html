@@ -57,7 +57,8 @@
             </div>
             <!-- Dummy Nav Links -->
             <div class="hidden md:flex items-center space-x-6 text-sm font-black tracking-widest uppercase">
-                <a href="#" class="hover:underline decoration-4 underline-offset-4 decoration-[#ffde59]">BERANDA</a>
+                <a href="#"
+                    class="hover:underline decoration-4 underline-offset-4 decoration-[#ffde59]">BERANDA</a>
                 <a href="#" class="hover:underline decoration-4 underline-offset-4 decoration-[#ffde59]">FITUR</a>
                 <a href="#"
                     class="bg-[#ffde59] px-4 py-2 border-2 border-black shadow-[4px_4px_0px_0px_#000] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">HUBUNGI
@@ -220,7 +221,8 @@
 
             <!-- Card 4: garuda -->
             <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
-                onclick="window.open('https://forms.gle/DhHQMf2w9mBzY3aKA')" data-aos="zoom-in-up" data-aos-delay="100">
+                onclick="window.open('https://forms.gle/DhHQMf2w9mBzY3aKA')" data-aos="zoom-in-up"
+                data-aos-delay="100">
                 <!-- Header Card (Black Image Section) -->
                 <div
                     class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 relative overflow-hidden">
@@ -265,8 +267,38 @@
                 <!-- Content Area -->
                 <div class="p-8 text-left flex-grow flex flex-col">
                     <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
-                        Portofolio Garuda</h2>
+                        Portofolio Garuda 2026</h2>
                     <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi Portofolio Garuda.</p>
+                    <div
+                        class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
+                        Visit Site &rarr;
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Bintang Garuda -->
+            <div class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_#000] overflow-hidden flex flex-col group h-full hover:translate-y-1 hover:translate-x-1 hover:shadow-[4px_4px_0px_0px_#000] transition-all cursor-pointer rounded-sm"
+                onclick="openBintangModal()" data-aos="zoom-in-up" data-aos-delay="100">
+                <!-- Header Card (Black Image Section) -->
+                <div
+                    class="relative h-48 bg-black flex items-center justify-center border-b-4 border-black shrink-0 overflow-hidden">
+                    <!-- Background Image -->
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/bintangtahunan.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Dark Overlay for contrast -->
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <!-- Badge Neo -->
+                    <div
+                        class="absolute top-4 left-4 bg-[#2196F3] border-2 border-black px-4 py-1.5 font-black text-sm text-black shadow-[4px_4px_0px_0px_#000] tracking-widest uppercase rounded-sm z-10">
+                        Bintang Tahunan
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="p-8 text-left flex-grow flex flex-col">
+                    <h2 class="text-2xl font-black text-black mb-4 leading-tight uppercase tracking-wide">
+                        Bintang Tahunan</h2>
+                    <p class="text-base text-gray-700 mb-8 font-bold">Klik untuk mengisi Bintang Tahunan.</p>
                     <div
                         class="mt-auto inline-flex items-center text-sm font-black text-white bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black transition-colors w-max uppercase tracking-widest">
                         Visit Site &rarr;
@@ -277,15 +309,38 @@
     </main>
 
     <!-- Modal for Portofolio Garuda -->
-    <div id="announcementModal" class="fixed inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none z-50">
-        <div id="modalContent" class="bg-white w-11/12 max-w-xl p-6 rounded-md transform transition-transform duration-200 scale-95 shadow-lg border-2 border-black">
+    <div id="announcementModal"
+        class="fixed inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none z-50">
+        <div id="modalContent"
+            class="bg-white w-11/12 max-w-xl p-6 rounded-md transform transition-transform duration-200 scale-95 shadow-lg border-2 border-black relative">
             <div class="flex items-start justify-between">
-                <h3 class="text-xl font-black uppercase">Portofolio Garuda</h3>
+                <h3 class="text-xl font-black uppercase">Portofolio Garuda 2026</h3>
             </div>
-            <p class="mt-4 text-gray-800 font-bold">Portofolio Garuda masih dalam proses. Silakan cek kembali nanti.</p>
-            <div class="mt-6 flex justify-end">
-                <button onclick="closeModal()" class="px-4 py-2 bg-[#ffde59] text-black font-black border-2 border-black uppercase">Tutup</button>
+            <button onclick="closeModal()"
+                class="absolute top-3 right-3 px-3 py-1 bg-[#ffde59] text-black font-black border-2 border-black uppercase rounded-sm">Tutup</button>
+            <p class="mt-4 text-gray-800 font-bold"> Silahkan diisi sesuai satuan putra dan putri.
+            </p>
+            <div class="mt-6 flex justify-end gap-3">
+                <a href="https://forms.gle/46thtQnDzrQLQTxG6" target="_blank"
+                    class="px-4 py-2 bg-black text-white font-black border-2 border-black uppercase hover:bg-white hover:text-black transition-colors">Putra</a>
+                <a href="https://forms.gle/LbWQxW65JPy1mVgb6" target="_blank"
+                    class="px-4 py-2 bg-black text-white font-black border-2 border-black uppercase hover:bg-white hover:text-black transition-colors">Putri</a>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal for Bintang Tahunan -->
+    <div id="bintangModal"
+        class="fixed inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 opacity-0 pointer-events-none z-50">
+        <div id="bintangContent"
+            class="bg-white w-11/12 max-w-md p-6 rounded-md transform transition-transform duration-200 scale-95 shadow-lg border-2 border-black relative">
+            <div class="flex items-start justify-between">
+                <h3 class="text-xl font-black uppercase">Bintang Tahunan</h3>
+            </div>
+            <button onclick="closeBintangModal()"
+                class="absolute top-3 right-3 px-3 py-1 bg-[#ffde59] text-black font-black border-2 border-black uppercase rounded-sm">Tutup</button>
+            <p class="mt-4 text-gray-800 font-bold">Fitur Bintang Tahunan masih dalam proses pembuatan. Silakan cek
+                kembali nanti.</p>
         </div>
     </div>
 
@@ -334,6 +389,26 @@
         function closeModal() {
             const modal = document.getElementById('announcementModal');
             const content = document.getElementById('modalContent');
+            if (modal && content) {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                content.classList.remove('scale-100');
+                content.classList.add('scale-95');
+            }
+        }
+
+        function openBintangModal() {
+            const modal = document.getElementById('bintangModal');
+            const content = document.getElementById('bintangContent');
+            if (modal && content) {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            }
+        }
+
+        function closeBintangModal() {
+            const modal = document.getElementById('bintangModal');
+            const content = document.getElementById('bintangContent');
             if (modal && content) {
                 modal.classList.add('opacity-0', 'pointer-events-none');
                 content.classList.remove('scale-100');
